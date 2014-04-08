@@ -1,7 +1,7 @@
 <?php
 
 $ACCESS_TOKEN  = 'https://api.domain.com/oauth/access_token';
-include '../oauth.inc';
+include '../oauth.php';
 $oauth = array (
   'consumer_key'       => '****',
   'consumer_secret'    => '****',

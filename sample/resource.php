@@ -1,6 +1,6 @@
 <?php
 
-include '../oauth.inc';
+include '../oauth.php';
 $oauth = array (
   'consumer_key'       => '****',
   'consumer_secret'    => '****',
