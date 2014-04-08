@@ -5,6 +5,8 @@ PHP OAuth v1.0 light client
 
 ## request_token request
 
+    $REQUEST_TOKEN = 'https://api.domain.com/oauth/request_token';
+    include 'oauth.inc';
     $oauth = array (
       'consumer_key'    => '****',
       'consumer_secret' => '****',
@@ -19,6 +21,8 @@ PHP OAuth v1.0 light client
 
 After user redirects, verifier will be received in callback e.g., http://www.clientdomain.com/callback/test?oauth_token=****&oauth_verifier=****
 
+    $ACCESS_TOKEN  = 'https://api.domain.com/oauth/access_token';
+    include 'oauth.inc';
     $oauth = array (
       'consumer_key'       => '****',
       'consumer_secret'    => '****',
@@ -31,11 +35,7 @@ After user redirects, verifier will be received in callback e.g., http://www.cli
 
 ## resource request
 
-    $REQUEST_TOKEN = 'https://api.domain.com/oauth/request_token';
-    $ACCESS_TOKEN  = 'https://api.domain.com/oauth/access_token';
-
     include 'oauth.inc';
-
     $oauth = array (
       'consumer_key'       => '****',
       'consumer_secret'    => '****',
